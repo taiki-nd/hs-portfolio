@@ -1,24 +1,51 @@
-# README
+# アプリケーション名
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+hs-portfolio
 
-Things you may want to cover:
+# アプリケーション概要
 
-* Ruby version
+写真家のポートフォリオ
 
-* System dependencies
+# テーブル設計
 
-* Configuration
+## user テーブル
 
-* Database creation
+| Column             | Type       | Options                  |
+| ------------------ | ---------- | ------------------------ |
+| name               | string     | null: false              |
+| email              | string     | null: false, unique:true |
+| encrypted_password | string     | null: false              |
+| admin              | boolean    | default: false           |
 
-* Database initialization
+### Association
+has_many: posts
 
-* How to run the test suite
+## post テーブル 
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column           | Type       | Options                        |
+| ---------------- | ---------- | ------------------------------ |
+| title            | string     | null: false                    |
+| category_id      | integer    | null: false                    |
+| model_name       | string     | null: false                    |
+| model_url        | string     | null: false                    |
+| text             | text       | null: false                    |
+| user             | references | null: false, foreign_key: true |
 
-* Deployment instructions
+### association
 
-* ...
+* belongs_to :user
+* has_many :comment
+
+## comment テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| text   | text       | null: false                    |
+| record | references | null: false, foreign_key: true |
+
+### Association
+
+* belongs_to :post
+
+## er図
+[![Image from Gyazo](https://i.gyazo.com/6f7de4e4972139228d802fff24b6cefc.png)](https://gyazo.com/6f7de4e4972139228d802fff24b6cefc)
