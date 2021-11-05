@@ -2,7 +2,7 @@ class CreatePosts < ActiveRecord::Migration[6.1]
   def change
     create_table :posts do |t|
       t.string :title
-      t.integer :category
+      t.integer :category_id
       t.string :model_name
       t.string :model_url
       t.text :text

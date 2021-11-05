@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_11_05_104542) do
 
   create_table "posts", charset: "utf8", force: :cascade do |t|
     t.string "title"
-    t.integer "category"
+    t.integer "category_id"
     t.string "model_name"
     t.string "model_url"
     t.text "text"
