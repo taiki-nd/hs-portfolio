@@ -43,8 +43,8 @@ ActiveRecord::Schema.define(version: 2021_11_05_121439) do
   create_table "posts", charset: "utf8", force: :cascade do |t|
     t.string "title"
     t.integer "category_id"
-    t.string "model_name"
-    t.string "model_url"
+    t.string "name"
+    t.string "url"
     t.text "text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

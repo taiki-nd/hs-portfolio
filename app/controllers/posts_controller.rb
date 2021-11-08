@@ -4,6 +4,10 @@ class PostsController < ApplicationController
     @posts = Post.order("created_at DESC")
   end
 
+  def new
+    @post = Post.new
+  end
+
   private
 
   def post_params
