@@ -25,6 +25,14 @@ class PostsController < ApplicationController
   def edit
   end
 
+  def update
+    if @post.update(post_params)
+      redirect_to action: :show
+    else
+      render action: :edit
+    end
+  end
+
   private
 
   def post_params
