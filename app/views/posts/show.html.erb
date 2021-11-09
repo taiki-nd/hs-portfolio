@@ -1,4 +1,40 @@
-<%= @post.title %>
+<div class="body">
+  <div class="space"></div>
+  <div class="contents">
 
-<%= link_to "編集", edit_post_path(@post.id), class: 'btn_standard' %>
-<%= link_to '削除', post_path(@post.id), method: :delete, data: { confirm: "削除しますか？" }, class: 'btn_standard' %>
+    <div class="left_content">
+      <h1><%= @post.title %></h1>
+      <%= image_tag(@post.image, class:"post_img_show") %>
+      <% if @post.text != nil %>
+        <p><%= @post.text %></p>
+      <% end %>
+      <% if @post.name != nil && @post.url != nil %>
+        <p>model: <%= link_to @post.name, @post.url, class: 'model' %></p>
+      <% end %>
+      <% if @post.name != nil && @post.url == nil %>
+        <p>model: <%= @post.name %></p>
+      <% end %>
+      <div class="space"></div>
+      <div class="btns">
+        <%= link_to "編集", edit_post_path(@post.id), class: 'btn_standard' %>
+        <%= link_to '削除', post_path(@post.id), method: :delete, data: { confirm: "削除しますか？" }, class: 'btn_standard' %>
+      </div>
+    </div>
+
+    <div class="right_content">
+      <h1>同カテゴリーの写真</h1>
+      <div class="grid">
+        <% @posts.each do |post| %>
+          <div class="post">
+            <%= link_to image_tag(post.image, class:"post_img"), post_path(post.id) %>
+            <p class="info"><%= post.title %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="space"></div>
+
+</div>

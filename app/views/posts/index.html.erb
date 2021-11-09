@@ -1,6 +1,30 @@
-<h1>Top</h1>
-<div class="grid">
-  <% @posts.each do |post| %>
-    <%= post.title %>
-  <% end %>
+<div class="body">
+  <div class="space"></div>
+  <h1>Gallery</h1>
+  <div class="grid">
+    <% @posts.each do |post| %>
+      <div class="post">
+        <%= link_to image_tag(post.image, class:"post_img"), post_path(post.id) %>
+        <p class="info"><%= post.title %></p>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="space"></div>
+  <h1>Profile</h1>
+  <div class="profile">
+    <div>
+      <%= image_tag("profile.jpg", class:"profile_img") %>
+    </div>
+    <div>
+      <p>name: Hiroki Shiozaki</p>
+      <p>プロフィール内容、使用機材など</p>
+    </div>
+  </div>
+
+  <div class="space"></div>
+  <div class="container">
+    <h1>Contact</h1>
+    <p>写真撮影のご依頼などはインスタグラムからダイレクトメッセージをお願いします！</p>
+  </div>
 </div>

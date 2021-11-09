@@ -1,7 +1,183 @@
+/* 初期設定 ----------------------------------------------------------------*/
+
+h1{
+  font-size: 1.7rem;
+  margin: 25px;
+}
+
+h2{
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+h3{
+  font-size: 1.3rem;
+  margin: 15px;
+}
+
+.space{
+  width: 100%;
+  height: 50px;
+}
+
+.body{
+  width: 95%;
+  margin: 0 auto;
+}
+
+img{
+  max-width: 100%;
+}
+
+.post_img{
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.profile_img{
+  width: 400px
+}
+
+header{
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.logo{
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin: 5px 25px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navi_list{
+  list-style: none;
+  margin: 5px 25px;
+  background: linear-gradient(45deg, #fed475 0%,#e53d5d 50%,#c23186 70%,#9c38bb 100%);
+  border-radius: 25px;
+  box-shadow: 0 5px 25px #865c5c26;
+  color: #fff;
+  display: inline-block;
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s linear;
+  width: 150px;
+}
+
+.navi_list:hover {
+  box-shadow: 0 5px 25px #0000004d;
+}
+
 .grid{
   margin-top: 40px;
   gap: 25px;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.profile{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px #29292933;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.contents{
+  display: flex;
+  justify-content: space-around;
+}
+
+.left_content{
+  width: 70%;
+}
+
+.model{
+  color: #888888;
+}
+
+.btns{
+  margin-top: 10px;
+}
+
+.btn_standard{
+  color: #888888;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 999px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.right_content{
+  width: 30%;
+}
+
+footer{
+  height: 200px;
+  background-color: #e4e3e3;
+}
+
+.footer{
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.copyright{
+  text-align: center;
+  margin: 0 auto;
+}
+
+form input,
+form textarea,
+form select{
+  width: 80%;
+  margin: 5px auto 15px;
+  padding: 15px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  display: block;
+}
+
+form input[type="submit"] {
+  background-color: #212121;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  width: 300px
+}
+
+form input[type="submit"]:hover {
+  background-color: #bbbbbb;
+  width: 300px
+}
+
+.explain{
+  width: 80%;
+  margin: 50px auto 15px;
+  display: block;
 }

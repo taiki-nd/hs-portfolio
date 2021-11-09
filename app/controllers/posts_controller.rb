@@ -20,6 +20,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    post_cat = @post.category 
+    @posts = Post.where(category_id: post_cat).order("created_at DESC").limit(5)
   end
 
   def edit
