@@ -1,6 +1,16 @@
-<h1>Top</h1>
+<h1>Gallery</h1>
 <div class="grid">
   <% @posts.each do |post| %>
-    <%= post.title %>
+    <div class="post">
+      <%= link_to image_tag(post.image, class:"post_img"), post_path(post.id) %>
+      <p class="info"><%= post.title %></p>
+    </div>
   <% end %>
 </div>
+
+<h1>Profile</h1>
+<div class="profile">
+  <%= image_tag("profile.jpg", class:"profile_img") %>
+</div>
+
+<h1>Contact</h1>

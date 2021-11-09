@@ -15,10 +15,16 @@ h3{
   margin: 15px;
 }
 
-
-
 img{
   max-width: 100%;
+}
+
+.post_img{
+  width: 300px;
+}
+
+.profile_img{
+  width: 400px
 }
 
 header{
