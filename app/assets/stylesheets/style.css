@@ -104,3 +104,33 @@ nav{
   background-color: #ffffff;
   box-sizing: border-box;
 }
+
+.contents{
+  display: flex;
+  justify-content: space-around;
+}
+
+.left_content{
+  width: 70%;
+}
+
+.model{
+  color: #888888;
+}
+
+.btns{
+  margin-top: 10px;
+}
+
+.btn_standard{
+  color: #888888;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 999px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.right_content{
+  width: 30%;
+}
