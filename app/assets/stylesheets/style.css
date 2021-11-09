@@ -185,3 +185,7 @@ form input[type="submit"]:hover {
 .log{
   text-align: center;
 }
+
+.back{
+  height: 60vh;
+}
