@@ -181,3 +181,7 @@ form input[type="submit"]:hover {
   margin: 50px auto 15px;
   display: block;
 }
+
+.log{
+  text-align: center;
+}

@@ -27,6 +27,9 @@
       <nav>
         <a href="/"><li class="navi_list">instagram</li></a>
       </nav>
+      <% if user_signed_in? %>
+        <p class="log"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></p>
+      <% end %>
     </footer>
   </body>
 </html>
