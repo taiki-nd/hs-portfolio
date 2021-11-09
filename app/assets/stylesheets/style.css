@@ -1,3 +1,65 @@
+/* 初期設定 ----------------------------------------------------------------*/
+
+h1{
+  font-size: 1.7rem;
+  margin: 25px;
+}
+
+h2{
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+h3{
+  font-size: 1.3rem;
+  margin: 15px;
+}
+
+
+
+img{
+  max-width: 100%;
+}
+
+header{
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin: 5px 25px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navi_list{
+  list-style: none;
+  margin: 5px 25px;
+  background: linear-gradient(45deg, #fed475 0%,#e53d5d 50%,#c23186 70%,#9c38bb 100%);
+  border-radius: 25px;
+  box-shadow: 0 5px 25px #865c5c26;
+  color: #fff;
+  display: inline-block;
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s linear;
+  width: 150px;
+}
+
+.navi_list:hover {
+  box-shadow: 0 5px 25px #0000004d;
+}
+
 .grid{
   margin-top: 40px;
   gap: 25px;
