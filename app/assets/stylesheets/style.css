@@ -157,6 +157,23 @@ nav{
   margin: 0 auto;
 }
 
+.equip_content{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.faderight{
+  opacity: 0;
+  transform: translatex(50px);
+  transition: all 1s;
+}
+
+.fadeleft{
+  opacity: 0;
+  transform: translatex(-50px);
+  transition: all 1s;
+}
+
 .container {
   margin: 20px 0;
   padding: 30px;
