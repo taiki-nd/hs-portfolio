@@ -1,0 +1,72 @@
+<div class="body">
+  <div class="space"></div>
+  <div class="space"></div>
+
+  <div class="scroll_img">
+    <div class="inner-block">
+      <div class="fade-img-box">
+        <img src="https://lh3.googleusercontent.com/pw/AM-JKLX8XPN-Ko-WMTskIgWbjulwHyY2kEIPzH5jQztzpQTpORFtQr9BuDyQSEqBHXCgvGVxIATuivi7bgRAtVUvDM3VTJtQSzUxAJaNAUIFHg6BEbVjwCjLTGlSFz8LJotlA41gfH6FcQyHMNjt0BpzsmWU=w2368-h1578-no?authuser=2" alt="">
+        <img src="https://lh3.googleusercontent.com/pw/AM-JKLWlDIPQ4OgM5o15zlrC4pGU45A6u4mUQsVMPhlw-GfWerxNoPB6OR1yRCrtc2tuOlUS65PFAkn5srFfyF4SMBL0kOev5zJ32VfNAVpRdo7RyUZCUsAiu5ESJaC0RWZHr8zGcAgoCT_d2B8sH7P_tzfG=w2368-h1578-no?authuser=2" alt="">
+        <img src="https://lh3.googleusercontent.com/pw/AM-JKLUx_GSoqHuewezjicM-mehy_gfvT8ExC2JqqVHbGCnyQgXFO3Mk6RHF2312EezGlH-YJOT_dnRjEQnGMyEBoTm3RuSWdUnp2VXbcEWExCL15ZpqT6bkwaLA64gpL8vqZmabvRWqyvb8AjAlbHsxhchp=w2368-h1578-no?authuser=2" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="space"></div>
+  <h1 class="fadeleft">Gallery</h1>
+  <div class="grid">
+    <% @posts.each do |post| %>
+      <div class="post">
+        <%= link_to image_tag(post.image, class:"post_img fadein"), post_path(post.id) %>
+        <p class="info fadein"><%= post.title %></p>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="space"></div>
+  <h1 class="fadeleft">Profile</h1>
+  <div class="profile">
+    <div class="fadein">
+      <%= image_tag("profile.jpg", class:"profile_img") %>
+    </div>
+    <div class="profile_name">
+      <h2>Name: Hiroki Shiozaki</h2>
+    </div>
+    <div class="profile_content">
+      <h2 class="fadeleft">あいさつ</h2>
+      <p class="grid_content faderight">
+        こんにちは！<br>
+        webサイトを見に来ていただきありがとうございます！<br>
+        <br>
+        このサイトでは、自身の写真を紹介しています。インスタグラムの方にさらに多くの写真を紹介していますので、そちらもご覧ください!
+      </p>
+      <h2 class="fadeleft">使用機材</h2>
+      <div class="equip">
+        <div class="camera">
+          <h3 class="fadeleft">Camera</h3>
+          <ul class="equip_content faderight">
+            <li>fujifilm</li>
+            <li>sony</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="lens">
+          <h3 class="fadeleft">Lens</h3>
+          <ul class="equip_content faderight">
+            <li>sony</li>
+            <li>sony</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space"></div>
+  <div class="container fadein">
+    <h1>Contact</h1>
+    <p>写真撮影のご依頼などはインスタグラムからダイレクトメッセージをお願いします！</p>
+  </div>
+</div>
