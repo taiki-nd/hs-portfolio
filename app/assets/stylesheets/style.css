@@ -13,6 +13,9 @@ h2{
 h3{
   font-size: 1.3rem;
   margin: 15px;
+  padding-left: 10px;
+  border-left: 5px solid #000000;
+  background-color: #e4e3e3;
 }
 
 .space{
@@ -84,6 +87,35 @@ nav{
   box-shadow: 0 5px 25px #0000004d;
 }
 
+.scroll_img{
+  overflow: hidden;
+ }
+ 
+ .inner-block{
+  width: 100%;
+  margin: 0 auto;
+  position:relative;
+ }
+ 
+ 
+ .fade-img-box{
+  width: 90%;
+  height: 700px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-top: 10px;
+  position:relative;
+ }
+ 
+ .fade-img-box img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
 .grid{
   margin-top: 40px;
   gap: 25px;
@@ -99,8 +131,30 @@ nav{
 }
 
 .profile{
+}
+
+.profile_img{
   display: flex;
-  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.profile_name{
+  text-align: center;
+}
+
+.profile_content{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.grid_content{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.equip{
+  width: 90%;
+  margin: 0 auto;
 }
 
 .container {
