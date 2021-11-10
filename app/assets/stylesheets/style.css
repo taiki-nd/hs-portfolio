@@ -191,6 +191,11 @@ nav{
   width: 70%;
 }
 
+.post_img_show{
+  display: block;
+  margin: 0 auto;
+}
+
 .model{
   color: #888888;
 }
@@ -265,4 +270,64 @@ form input[type="submit"]:hover {
 
 .back{
   height: 60vh;
+}
+
+@media screen and (max-width: 480px){
+
+  .logo{
+    font-size: 15px;
+  }
+
+  img{
+    width: 300px;
+  }
+
+  .scroll_img{
+    overflow: hidden;
+  }
+   
+   .inner-block{
+    width: 100%;
+    margin: 0 auto;
+    position:relative;
+  }
+   
+   
+   .fade-img-box{
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-top: 10px;
+    position:relative;
+  }
+   
+   .fade-img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  .profile_content{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contents{
+    flex-direction: column;
+  }
+
+  .left_content{
+    width: 100%;
+  }
+  
+  .model{
+    color: #888888;
+  }
+  
+  .right_content{
+    width: 100%;
+  }
+
 }
