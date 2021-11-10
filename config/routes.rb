@@ -4,5 +4,9 @@ Rails.application.routes.draw do
     :sessions => 'users/sessions'
    }
   root to: 'staticpages#top' 
-  resources :posts
+  resources :posts do
+    collection do
+      get 'search'
+    end
+  end
 end
