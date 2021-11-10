@@ -92,6 +92,12 @@ nav{
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.fadein{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s;
+}
+
 .profile{
   display: flex;
   justify-content: space-around;
