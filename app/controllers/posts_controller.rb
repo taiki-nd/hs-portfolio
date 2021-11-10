@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to posts_path
+      redirect_to root_path
     else
       render :new
     end
@@ -39,7 +39,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    redirect_to posts_path
+    redirect_to root_path
   end
 
   def search
@@ -49,7 +49,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :category_id, :model_name, :model_url, :text, :image)
+    params.require(:post).permit(:title, :category_id, :name, :url, :text, :image)
   end
 
   def set_post

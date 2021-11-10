@@ -47,5 +47,3 @@ has_many: posts
 
 * belongs_to :post
 
-## er図
-[![Image from Gyazo](https://i.gyazo.com/6f7de4e4972139228d802fff24b6cefc.png)](https://gyazo.com/6f7de4e4972139228d802fff24b6cefc)
