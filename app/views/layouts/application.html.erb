@@ -18,7 +18,7 @@
         <%= link_to "h.Shio's Photo", "/", class: "logo_content" %>
       </div>
       <nav>
-        <a href="/"><li class="navi_list">instagram</li></a>
+        <a href="https://www.instagram.com/shio.0110", target: :_blank><li class="navi_list">instagram</li></a>
       </nav>
     </header>
     <%= yield %>
@@ -27,7 +27,7 @@
         <p class="copyright">Copyright h.Shio's-Photo allright reserved</p>
       </div>
       <nav>
-        <a href="/"><li class="navi_list">instagram</li></a>
+        <a href="https://www.instagram.com/shio.0110", target: :_blank><li class="navi_list">instagram</li></a>
       </nav>
       <% if user_signed_in? %>
         <p class="log"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></p>
