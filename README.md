@@ -17,9 +17,6 @@ hs-portfolio
 | encrypted_password | string     | null: false              |
 | admin              | boolean    | default: false           |
 
-### Association
-has_many: posts
-
 ## post テーブル 
 
 | Column           | Type       | Options                        |
@@ -31,19 +28,5 @@ has_many: posts
 | text             | text       | null: false                    |
 | user             | references | null: false, foreign_key: true |
 
-### association
 
-* belongs_to :user
-* has_many :comment
-
-## comment テーブル
-
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| text   | text       | null: false                    |
-| record | references | null: false, foreign_key: true |
-
-### Association
-
-* belongs_to :post
 
