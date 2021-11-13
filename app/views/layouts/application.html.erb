@@ -31,6 +31,7 @@
       </nav>
       <% if user_signed_in? %>
         <p class="log"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></p>
+        <p class="log"><%= link_to 'new post', new_post_path, method: :get %></p>
       <% end %>
     </footer>
   </body>
