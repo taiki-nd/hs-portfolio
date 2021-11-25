@@ -63,6 +63,10 @@ header{
   margin: 5px 25px;
 }
 
+.logo_resp{
+  display: none;
+}
+
 .logo_content{
   color: #000000;
   text-decoration: none;
@@ -281,8 +285,30 @@ form input[type="submit"]:hover {
 
 @media screen and (max-width: 480px){
 
+  .header{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+  }
+
   .logo{
+    display: none;
+  }
+
+  .logo_resp{
+    display: block;
     font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin: 5px 25px;
   }
 
   img{
