@@ -6,7 +6,7 @@
       <h1><%= @post.title %></h1>
       <%= image_tag(@post.image, class:"post_img_show") %>
       <% if @post.text != nil %>
-        <p><%= @post.text %></p>
+        <p><%= safe_join(@post.text.split("\n"),tag(:br)) %></p>
       <% end %>
       <% if @post.name != nil && @post.url != nil %>
         <p>model: <%= link_to @post.name, @post.url, class: 'model' %></p>
