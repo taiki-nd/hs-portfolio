@@ -2,6 +2,9 @@
 
 hs-portfolio
 
+# URL
+http://shio-web.jp/
+
 # アプリケーション概要
 
 写真家のポートフォリオ
