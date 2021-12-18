@@ -130,6 +130,17 @@ nav{
   object-fit: cover;
  }
 
+.scroll_info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .fadeout{
+  opacity: 1;
+  transition: all 2s;
+ }
+
  .scroll{
   width: fit-content;
   margin: 12px auto;
@@ -138,9 +149,8 @@ nav{
   font-weight: bold;
  }
 
- .fadeout{
-  opacity: 1;
-  transition: all 2s;
+ .fa-angle-double-down{
+   margin: 0 5px;
  }
 
 .grid{
