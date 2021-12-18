@@ -1,5 +1,12 @@
 $(function(){
 
+  $(window).scroll(function(){
+    $('.fadeout').each(function(){
+      $(this).css('opacity','0');
+      $(this).css('transform', 'translateX(100px)');
+    })
+  })
+
   if (window.matchMedia( '(min-width: 600px)' ).matches){
     $(window).scroll(function(){
       $('.fadein').each(function(){
