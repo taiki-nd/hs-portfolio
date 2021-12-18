@@ -2,6 +2,9 @@ $(function(){
 
   $(window).scroll(function(){
     $('.fadeout').each(function(){
+      $(this).css('background', '-webkit-linear-gradient(45deg, #fed475 0%,#e53d5d 50%,#c23186 70%,#9c38bb 100%)');
+      $(this).css('-webkit-background-clip', 'text');
+      $(this).css('-webkit-text-fill-color', 'transparent');
       $(this).css('opacity','0');
       $(this).css('transform', 'translateX(100px)');
     })

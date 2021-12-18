@@ -131,14 +131,16 @@ nav{
  }
 
  .scroll{
-  width: 100%;
-  margin: 12px 0;
+  width: fit-content;
+  margin: 12px auto;
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
  }
 
  .fadeout{
   opacity: 1;
-  transition: all 1.5s;
+  transition: all 2s;
  }
 
 .grid{
